@@ -7,8 +7,8 @@
         <!-- MySQL DB running on localhost -->
         <property name="connection.url">jdbc:mysql://localhost/cs544</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.username"></property>
-        <property name="connection.password"></property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
 		<!-- Use the Hibernate built-in pool for tests. -->
@@ -23,5 +23,6 @@
 
 		<!-- Mapping files -->
 		<mapping class="edu.mum.cs.cs544.exercises.Car" />
+		<mapping class="edu.mum.cs.cs544.answer.Book" />
 	</session-factory>
 </hibernate-configuration>
